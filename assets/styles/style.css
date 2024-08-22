@@ -88,8 +88,45 @@ body {
   margin: 20px 0 0;
   padding: 40px 50px;
 
-  color: var(--main-color);
-
   background-color: white;
   box-shadow: var(--box-shadow);
+}
+
+.to-do__task {
+  display: flex;
+  min-width: 0;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+
+  color: var(--main-color);
+  line-height: 120%;
+  word-break: break-word;
+  overflow-wrap: break-word;
+
+  cursor: pointer;
+}
+
+.to-do__task_complited {
+  text-decoration: line-through;
+}
+
+.to-do__bin {
+  width: 18px;
+  height: 18px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 455px) {
+  .to-do__input {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .to-do__list {
+    width: 90%;
+    margin: 20px auto 0;
+    padding: 25px 25px;
+  }
 }
