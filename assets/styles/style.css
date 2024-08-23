@@ -129,7 +129,7 @@ body {
 
   .to-do__list {
     width: 90%;
-    min-height: 200px;
+    min-height: 250px;
     padding: 25px 25px;
   }
 }
